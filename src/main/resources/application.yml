@@ -2,15 +2,15 @@ spring:
   #数据来源库
   source:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://rm-k2js75814v1pm76k2.mysql.zhangbei.rds.aliyuncs.com:3306/dinner?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
-    username: bigdata
-    password: cdzg123!@#
+    url: jdbc:mysql://localhost:3306/db_products?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
     #目标数据库
   target:
-    driver-class-name: com.mysql.cj.jdMysqlToMysqlComponenbc.Driver
-    url: jdbc:mysql://39.105.196.142:43306/dinner?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.16.118.238:3306/atom_test?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
     username: root
-    password: zgdc
+    password: 123456
     # 需要传输的表
   trasform:
-    tables: t_order_meal,t_revenue_info,t_order_status,t_restaurant
+    tables: bind_phone,upload_record,jd_item
