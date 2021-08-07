@@ -8,9 +8,9 @@ spring:
     #目标数据库
   target:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.16.118.238:3306/atom_test?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/atom_test?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
     username: root
-    password: 123456
+    password: root
     # 需要传输的表
   trasform:
     tables: bind_phone,upload_record,jd_item
